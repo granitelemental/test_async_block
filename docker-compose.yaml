@@ -1,0 +1,10 @@
+services:
+  fastapi:
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
+
+  tests:
+    build:
+      dockerfile: ./Dockerfile_tests
